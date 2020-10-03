@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Dog Site</title>
   </head>
-  <body>
+  <body class="contact-body">
     <nav>
       <div class="logo">
         <h4>Blueridge Canine Academy</h4>
@@ -28,6 +28,42 @@
         <div class="line3"></div>
       </div>
     </nav>
-    <section></section>
+    <div class="contact-title">
+      <h1>Welcome To BlueRidge Canine Academy</h1>
+      <h3>Send us a message for any questions or concerns</h3>
+    </div>
+
+    <div class="contact-form">
+      <form id="contact-form" method="post" action="">
+        <input
+          type="text"
+          name="name"
+          class="form-control"
+          placeholder="Your Name"
+          required
+        /><br />
+        <input
+          type="text"
+          name="email"
+          class="form-control"
+          placeholder="Your Email"
+          required
+        /><br />
+        <textarea
+          name="message"
+          class="form-control"
+          placeholder="Message"
+          required
+        ></textarea
+        ><br />
+        <input
+          type="Submit"
+          name="name"
+          class="form-control submit"
+          value="SEND MESSAGE"
+          required
+        />
+      </form>
+    </div>
   </body>
 </html>
