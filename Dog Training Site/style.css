@@ -240,6 +240,7 @@ form .submit:hover {
   text-shadow: 2px 2px 0px #01bfff, 5px 5px 0px #b0e1f9, 10px 10px 0px #87ceeb,
     12px 12px 0px #87ceeb, 15px 15px 0px #009688, 20px 20px 0px #3190c5;
   margin-top: -8px;
+
 }
 
 img {
@@ -331,12 +332,12 @@ img {
   display: inline-block;
   right: 50%;
   opacity: 1;
-  transform: translate(159%, 355%);
+  transform: translate(84%, 260%);
 }
 
 #sun img {
   align-items: center;
-  transform: translate(356%, 39%);
+  transform: translate(244%, 10%);
   width: 300px;
   height: 300px;
   opacity: 1.6;
