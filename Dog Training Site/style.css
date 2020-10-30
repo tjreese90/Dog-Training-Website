@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Marvel:400,700");
+
 * {
   margin: 0px;
   padding: 0px;
@@ -10,12 +12,13 @@ body {
   height: 100vh;
   background: url("https://i.pinimg.com/originals/36/f0/94/36f0949c623b61a235fd6645fa507236.jpg");
   background-attachment: fixed;
+  background-size: cover;
 }
 
 nav {
-  display: flex !important;
-  justify-content: space-around !important;
-  align-items: center !important;
+  display: flex ;
+  justify-content: space-around;
+  align-items: center;
   min-height: 8vh;
   background: url("https://i.pinimg.com/originals/36/f0/94/36f0949c623b61a235fd6645fa507236.jpg");
   font-family: "Poppins", sans-serif;
@@ -30,27 +33,27 @@ nav {
   color: #fff;
 }
 
-.nav-link-1 {
+.nav-link {
   display: flex;
   justify-content: space-around;
   width: 25%;
+  opacity: 1;
 }
 
-.nav-link-1 li {
+.nav-link li {
   list-style: none;
   color: #fff;
 }
 
-.nav-link-1 a {
+.nav-link a {
   color: url("https://images.pexels.com/photos/960137/pexels-photo-960137.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
   font-size: 14px;
-  color: #fff;
 }
 
-.nav-link-1 a:hover {
+.nav-link a:hover {
   color: gray;
 }
 
@@ -68,22 +71,45 @@ nav {
 }
 
 @media screen and (max-width: 1024px) {
-  .nav-link-1 {
+  .nav-link {
     width: 60%;
   }
+
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 968px) {
   body {
     overflow-x: hidden;
   }
+  
+    .service-boxes{
+      display:block;
+      flex-direction: row;
+  }
+  
+      .service-boxes-1{
+      display:block;
+      flex-direction: row;
+  }
+  
+  .artboard{
+      padding: 3vw;
+  }
 
-  .nav-link-1 {
+.card__side--back{
+    background-color: rgba(0,123,255,.5);
+    top: auto;
+    width: fit-content;
+}
+
+  .nav-link {
     position: absolute;
     right: 0px;
     height: 92vh;
+    z-index: 1;
     top: 8vh;
-    background-color: brown;
+    opacity: 0.75;
+    background-image: url("https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,9 +117,12 @@ nav {
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
+  .nav-link a{
+    opacity: 1;
+  }
 
-  .nav-link-1 li {
-    opacity: 0;
+  .nav-link li {
+    opacity: 1;
   }
 
   .burger {
@@ -177,8 +206,9 @@ form {
   outline: none;
   border-bottom: 2px solid grey;
   color: #fff;
-  font-size: 18px;
   margin-bottom: 16px;
+  font-size: xx-large;
+  font-weight: bolder;
 }
 
 input {
@@ -224,6 +254,7 @@ form .submit:hover {
   padding-top: 1px;
   position: relative;
   padding-bottom: 0.3%;
+  background-size: cover;
 }
 
 .w3-content w3-section {
@@ -231,7 +262,7 @@ form .submit:hover {
 }
 
 .slideshow h2 {
-  font-size: 5rem;
+  font-size: 4vw;
   text-align: center;
   height: 10vh;
   line-height: 8vh;
@@ -248,7 +279,7 @@ form .submit:hover {
 
 .header h2 {
 
-  font-size: 5rem;
+  font-size: 5vw;
   text-align: center;
   height: 10vh;
   line-height: 13vh;
@@ -370,7 +401,7 @@ img {
   opacity: 1.9;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Marvel:400,700");
+
 
 .section_body {
   padding: 0;
@@ -478,18 +509,17 @@ img {
 .card-2 {
   flex: initial;
   position: relative;
-  height: 52rem;
-  width: 35rem;
+  height: 40vw;
+  width: 30vw;
   -moz-perspective: 200rem;
   perspective: 200rem;
   margin: 0rem;
 }
 
 .card__side {
-  height: 59rem;
+  height: 45vw;
   transition: all 0.8s ease;
   position: absolute;
-  top: 33px;
   left: 0;
   width: 100%;
   -webkit-backface-visibility: hidden;
@@ -503,7 +533,7 @@ img {
 }
 
 .card__side--front-1 {
-  background-image: linear-gradient(to right bottom, rgba(216, 212, 221, 0.65), rgba(0, 4, 255, 0.7)), url("./images/dog6.jpg");
+  background-image: linear-gradient(to right bottom, rgba(216, 212, 221, 0.65), rgba(0, 4, 255, 0.7)), url("./images/dog5.jpg");
   background-size: cover;
   width: 80%;
   height: 64%;
@@ -511,7 +541,7 @@ img {
 }
 
 .card__side--front-2 {
-  background-image: linear-gradient(to right bottom, rgba(216, 212, 221, 0.65), rgba(0, 4, 255, 0.7)), url("./images/dog5.jpg");
+  background-image: linear-gradient(to right bottom, rgba(216, 212, 221, 0.65), rgba(0, 4, 255, 0.7)), url("./images/dog6.jpg");
   background-size: cover;
   width: 80%;
   height: 64%;
@@ -546,7 +576,7 @@ img {
 }
 
 .card__side--back {
-  background-color: #fff;
+  background-color: rgba(0,123,255,.5);;
   transform: rotateY(180deg);
   width: 80;
   height: 64;
@@ -600,12 +630,13 @@ img {
 .card__cover {
   position: relative;
   background-size: cover;
-  height: 14rem;
+  height: 10rem;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  background-image: linear-gradient(to top right, rgba(25, 79, 255, 0.65), rgba(20, 71, 212, 0.65)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
+  background-color: #045de9;
+  background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
 }
 
 .card__heading {
@@ -652,6 +683,7 @@ img {
 only screen and (hover: none) {
   .card-2 {
     height: auto;
+    width: fit-content;
     border-radius: 3px;
     background-color: #fff;
     box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
@@ -669,7 +701,7 @@ only screen and (hover: none) {
   .card__side--front-4,
   .card__side--front-5,
   .card__side--front-6 {
-    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
 
   }
 
@@ -687,7 +719,8 @@ only screen and (hover: none) {
   }
 
   .card__details {
-    padding: 3rem 2rem;
+    padding: 3rem 7rem;
+    width: 61vw;
   }
 
   .card__theme {
@@ -1234,4 +1267,28 @@ button {
 .center-items {
   align-items: center;
   text-align: center;
+}
+
+.book-appointment {
+
+  text-align: center;
+  align-items: center;
+  font-size: 40px;
+  background: linear-gradient(5deg, aliceblue, transparent);
+  border-color: linear-gradient(5deg, aliceblue, transparent);
+  border-style: double;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-53%, -70%);
+  width: 100%;
+  background-color: darkblue;
+  background-image: linear-gradient(35deg, #045de9 0%, #09c6f9 74%);
+  cursor: pointer;
+}
+
+.book-appointment button:hover {
+  background: -moz-linear-gradient(3deg, aliceblue, transparent)
 }

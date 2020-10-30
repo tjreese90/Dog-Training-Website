@@ -1,23 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link rel="stylesheet" href="./style.css" />
     <title>Contact Me</title>
   </head>
+
   <body class="contact-body">
     <nav>
       <div class="logo-1">
         <h4>Blueridge Canine Academy</h4>
       </div>
       <ul class="nav-link-1">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="../index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="contact.html">Contact me</a></li>
@@ -34,36 +33,13 @@
     </div>
 
     <div class="contact-form">
-      <form id="contact-form" method="post" action="">
-        <input
-          type="text"
-          name="name"
-          class="form-control"
-          placeholder="Your Name"
-          required
-        /><br />
-        <input
-          type="text"
-          name="email"
-          class="form-control"
-          placeholder="Your Email"
-          required
-        /><br />
-        <textarea
-          name="message"
-          class="form-control"
-          placeholder="Message"
-          required
-        ></textarea
-        ><br />
-        <input
-          type="Submit"
-          name="name"
-          class="form-control submit"
-          value="SEND MESSAGE"
-          required
-        />
+      <form id="contact-form" method="POST" action="https://formspree.io/f/xknpjyev">
+        <input type="text" name="name" class="form-control" placeholder="Your Name" required /><br />
+        <input type="text" name="_replyto" class="form-control" placeholder="Your Email" required /><br />
+        <textarea name="message" class="form-control" placeholder="Message" required></textarea><br />
+        <input type="submit" name="submit" class="form-control submit" value="Send" required />
       </form>
     </div>
   </body>
-</html>
+
+  </html>
